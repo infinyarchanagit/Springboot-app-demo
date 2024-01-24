@@ -3,6 +3,6 @@ steps:
     entrypoint: mvn
     args: ["package", "-Dmaven.test.skip=true"] 
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'us-central1-docker.pkg.dev/varun-org/demo-j-app:$SHORT_SHA', '.']
+    args: ['build', '-t', 'us-central1-docker.pkg.dev/decisive-apogee-411616/varun-gar/demo-j-app:$SHORT_SHA', '.']
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'us-central1-docker.pkg.dev/varun-org/demo-j-app:$SHORT_SHA']
+    args: ['push', 'us-central1-docker.pkg.dev/decisive-apogee-411616/varun-gar/demo-j-app:$SHORT_SHA']

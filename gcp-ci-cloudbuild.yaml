@@ -1,0 +1,8 @@
+steps:
+  - name: maven:3-jdk-8
+    entrypoint: mvn
+    args: ["package", "-Dmaven.test.skip=true"] 
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'us-central1-docker.pkg.dev/varun-org/demo-j-app:$SHORT_SHA', '.']
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'us-central1-docker.pkg.dev/varun-org/demo-j-app:$SHORT_SHA']

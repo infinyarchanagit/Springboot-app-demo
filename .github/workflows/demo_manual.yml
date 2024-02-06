@@ -1,4 +1,4 @@
-name: Varun Manual Workflow
+name: infiny Manual Workflow
 on:
   workflow_dispatch:
     inputs:

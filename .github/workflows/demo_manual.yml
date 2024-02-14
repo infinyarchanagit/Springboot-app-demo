@@ -8,7 +8,7 @@ on:
         default: 'development'
 
 jobs:
-  demo101:
+  demo1011:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to environment

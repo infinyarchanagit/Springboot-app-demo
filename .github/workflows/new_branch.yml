@@ -18,4 +18,4 @@ jobs:
 
     
       - name: testing secret
-        run: ${{secrets.TOKEN_SECRET}}
+        run: echo ${{secrets.TOKEN_SECRET}}

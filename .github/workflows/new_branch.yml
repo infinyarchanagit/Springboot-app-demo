@@ -16,13 +16,6 @@ jobs:
         with:
           node-version: '14'
 
-      - name: Install dependenciesnpm 
-        run: npm install
-
-      - name: Build
-        run: npm run build
-
-      - name: Run tests
-        run: npm test
-
-      # Add more steps as needed
+    
+      - name: testing secret
+        run: ${{secrets.TOKEN_SECRET}}

@@ -5,7 +5,7 @@ on:
       environment:
         description: 'Environment to deploy'
         required: true
-        default: 'development'
+        default: 'production'
 
 jobs:
   demo2:

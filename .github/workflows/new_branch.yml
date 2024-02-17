@@ -22,5 +22,5 @@ jobs:
 
       - name: Use a secret
         run: echo ${{ secrets.TOKEN_SECRET }}
-      env:
-        TOKEN_SECRET: ${{ secrets.TOKEN_SECRET }}
+        env:
+          TOKEN_SECRET: ${{ secrets.TOKEN_SECRET }}
